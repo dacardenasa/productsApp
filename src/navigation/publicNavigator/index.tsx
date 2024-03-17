@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { LoginScreen, RegisterScreen } from '@/screens';
 import { RootPublicStackParamList } from '..';
 
-const Stack = createNativeStackNavigator<RootPublicStackParamList>();
+const Stack = createStackNavigator<RootPublicStackParamList>();
 
-function PrivateNavigator() {
+function PublicNavigator() {
     return (
         <Stack.Navigator
             screenOptions={{
@@ -18,4 +18,4 @@ function PrivateNavigator() {
     );
 }
 
-export default PrivateNavigator;
+export default PublicNavigator;
