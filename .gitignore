@@ -8,6 +8,8 @@ node_modules/
 dist/
 web-build/
 
+.env
+
 # Native
 *.orig.*
 *.jks
@@ -33,3 +35,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+package-lock.json
+yarn.lock
